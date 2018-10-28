@@ -1,0 +1,32 @@
+<div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-center">
+                            <h2>{{ page.title }}</h2>
+                            <hr class="star-primary">
+                            {% if page.img %}
+                            <img src="/img/portfolio/{{ page.img }}" class="img-responsive img-centered" alt="{{ page.alt }}">
+                            {% endif %}
+                            {% if page.description %}
+                                <p>{{ page.description }}</p>
+                            {% endif %}
+                            <ul class="list-inline item-details">
+                                {% if page.client %}
+                                    <li>Client:
+                                        <strong><a href="http://startbootstrap.com">{{ page.client }}</a>
+                                        </strong>
+                                    </li>
+                                {% endif %}
+                                {% if page.project-date %}
+                                    <li>Date:
+                                        <strong><a href="http://startbootstrap.com">{{ page.project-date }}</a>
+                                        </strong>
+                                    </li>
+                                {% endif %}
+                                
+                            </ul>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
