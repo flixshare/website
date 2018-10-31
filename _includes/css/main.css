@@ -259,6 +259,7 @@ section.success {
     color: #fff;
     background: 0 0;
     transition: all .3s ease-in-out;
+    white-space: inherit;
 }
 
 .btn-outline:hover,
